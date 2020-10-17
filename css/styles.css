@@ -38,6 +38,7 @@ body{
 
 
  	.head{
+ 		text-align: center;
  		padding: 0;
  		height: 100%;
  		display: flex;
@@ -156,10 +157,9 @@ color:#666eea;
 
 
 .img_galeria{
+	object-fit: cover;
 	width: 30%;
-	
 	display: block;
-	
 	margin-bottom: 15px;
 	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 	cursor: pointer;
@@ -183,6 +183,7 @@ color:#666eea;
 	transform: translate(0);
 }
 .agregar_imagen{
+	object-fit: cover;
 	width: 60%;
 	height: 70%;
 	border-radius: 10px;
@@ -306,4 +307,114 @@ footer{
 	height: 2px;
 	background: #ffff;
 	margin-bottom: 60px;
+}
+
+/*section del resposive*/
+@media screen and (max-width: 800px){
+   
+   .menu_navegacion{
+   	width: 50vw;
+   }
+
+   .titulo{
+    font-size: 30px;
+   }
+
+   .contenido_servicio img{
+	width: 80%;
+	margin-bottom: 40px;
+    }
+
+    .imgen_servicio{
+	 width: 80%;
+ }
+
+.servicio{
+	margin-bottom: 30px;
+	
+}
+
+.agregar_imagen{
+	
+	width: 80%;
+	
+}
+.img_galeria{
+	width: 45%;
+}
+
+.cont_expert{
+	width: 100%;
+	
+}
+
+.fooer_contec{
+	justify-content: center;
+	
+}
+
+.social_media{
+	width: 80%;
+	justify-content: space-evenly;
+}
+
+.social_media span{
+margin-left: 0;
+}
+
+
+.conct_us{
+	text-align: center;
+	width: 80%;
+	margin-bottom: 40px;
+}
+.social_media_icono{
+	margin-left: 0;
+}
+
+	
+}
+
+
+/*section de medie cueri de 300px*/
+
+@media screen and (max-width: 500px){
+	 .menu_navegacion{
+   	width: 65vw;
+   }
+   .hamburgue{
+
+   	top: 20px;
+   	right: 20px;
+   }
+
+    .titulo{
+    font-size: 30px;
+   }
+
+    .subtitulo{
+    	font-size: 30px;
+    }
+     
+     .img_galeria{
+	width: 95%;
+
+    } 
+
+   .agregar_imagen{
+	
+	width: 95%;
+	
+}
+.social_media span{
+width: 100%;
+}
+  
+
+  .conct_us{
+	
+	width: 90%;
+
+}
+
 }
